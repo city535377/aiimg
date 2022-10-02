@@ -14,6 +14,29 @@ let classifier;
 // Model URL
 let imageModelURL = 'https://teachablemachine.withgoogle.com/models/hk59cAHml/';
 
+  var constraints = {
+
+    audio: false,
+
+    video: {
+
+      facingMode: {
+
+        exact: "environment"
+
+      }
+
+    }   
+
+    //video: {
+
+      //facingMode: "user"
+
+    //}
+
+  };
+
+
 // Video
 let video;
 let flippedVideo;
